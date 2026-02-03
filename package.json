@@ -1,0 +1,85 @@
+{
+  "name": "commit-ai",
+  "displayName": "Commit AI - Smart Git Commit Messages",
+  "description": "Generate intelligent, conventional commit messages from your staged changes using AI",
+  "version": "1.0.0",
+  "publisher": "igrisai",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "SCM Providers"
+  ],
+  "keywords": [
+    "git",
+    "commit",
+    "ai",
+    "conventional commits",
+    "automation"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commit-ai.generateCommit",
+        "title": "Generate AI Commit Message",
+        "icon": "$(sparkle)"
+      },
+      {
+        "command": "commit-ai.setApiKey",
+        "title": "Commit AI: Set API Key"
+      }
+    ],
+    "configuration": {
+      "title": "Commit AI",
+      "properties": {
+        "commit-ai.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your Anthropic API key for Claude"
+        },
+        "commit-ai.commitStyle": {
+          "type": "string",
+          "enum": [
+            "conventional",
+            "simple",
+            "detailed"
+          ],
+          "default": "conventional",
+          "description": "Style of commit messages to generate"
+        },
+        "commit-ai.maxDiffLines": {
+          "type": "number",
+          "default": 500,
+          "description": "Maximum lines of diff to send to AI (for cost control)"
+        }
+      }
+    },
+    "menus": {
+      "scm/title": [
+        {
+          "command": "commit-ai.generateCommit",
+          "group": "navigation",
+          "when": "scmProvider == git"
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igrisai/commit-ai-vscode"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1a1a2e",
+    "theme": "dark"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "sharp": "^0.34.5"
+  }
+}
