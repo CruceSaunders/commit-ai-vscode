@@ -81,9 +81,6 @@ MIT License - see [LICENSE](LICENSE)
 
 ## Links
 
-- [Landing Page](https://brainwave-api.vercel.app/)
-- [BrainWave Browser Extension](https://brainwave-api.vercel.app/)
-
----
-
-Built with ❤️ by [Igris AI](https://brainwave-api.vercel.app/)
+- **Website**: [brainwave-api.vercel.app](https://brainwave-api.vercel.app/)
+- **Chrome Extension**: [brainwave-ai-chrome](https://github.com/CruceSaunders/brainwave-ai-chrome)
+- **Firefox Extension**: [brainwave-ai-firefox](https://github.com/CruceSaunders/brainwave-ai-firefox)
