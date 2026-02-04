@@ -89,3 +89,7 @@ MIT License - see [LICENSE](LICENSE)
 - **Website**: [brainwave-api.vercel.app](https://brainwave-api.vercel.app/)
 - **Chrome Extension**: [brainwave-ai-chrome](https://github.com/CruceSaunders/brainwave-ai-chrome)
 - **Firefox Extension**: [brainwave-ai-firefox](https://github.com/CruceSaunders/brainwave-ai-firefox)
+
+## Also By The Author
+
+- **[Metacognition Template for OpenClaw](https://github.com/CruceSaunders/openclaw-metacog-template)** - Give any AI agent the ability to analyze and improve itself
